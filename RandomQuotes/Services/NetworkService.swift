@@ -22,7 +22,7 @@ struct NetworkService {
     static func fetch() async -> Quote? {
         
         // 1. Attempt to create a URL from the address provided
-        let endpoint = "https://official-joke-api.appspot.com/random_joke"
+        let endpoint = "https://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=json&lang=en"
         guard let url = URL(string: endpoint) else {
             print("Invalid address for JSON endpoint.")
             return nil

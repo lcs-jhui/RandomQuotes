@@ -17,6 +17,8 @@ struct QuoteView: View {
             
             VStack{
                 
+                Spacer()
+                
                 if let currentQuote = currentQuote {
                     
                     Text(currentQuote.quoteText)
@@ -31,7 +33,25 @@ struct QuoteView: View {
                     //Show a spinning wheel indicator until the joke is loaded
                     ProgressView()
                 }
+                
+                Spacer()
+                
+                Button(action: {
+                    
+                    Task{
+                        //Get another joke
+                        withAnimation {
+                            currentQuote = nil
+                        }
+                        currentQuote = await NetworkService.fetch()
+                    }
+                }, label: {
+                    Text("Get another quote")
+                })
+                .buttonStyle(.borderedProminent)
+                
             }
+            .padding()
             .task {
                 currentQuote = await NetworkService.fetch()
             }
