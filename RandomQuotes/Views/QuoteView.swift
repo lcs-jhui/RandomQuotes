@@ -9,7 +9,20 @@ import SwiftUI
 
 struct QuoteView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            
+            VStack{
+                
+                Text("Do or do not, there is no try")
+                    .font(.largeTitle)
+                    .multilineTextAlignment(.center)
+                    .padding()
+                Text("-Yoda")
+                    .font(.title2)
+                    .italic()
+            }
+            .navigationTitle("Random Quote")
+        }
     }
 }
 
