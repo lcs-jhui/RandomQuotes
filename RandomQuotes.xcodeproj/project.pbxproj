@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9735F3129EE3C9D0081354E /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9735F3029EE3C9D0081354E /* Quote.swift */; };
 		B9F6681D29ECC2E9000D9BDF /* RandomQuotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F6681C29ECC2E9000D9BDF /* RandomQuotesApp.swift */; };
 		B9F6682129ECC2EC000D9BDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9F6682029ECC2EC000D9BDF /* Assets.xcassets */; };
 		B9F6682429ECC2EC000D9BDF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9F6682329ECC2EC000D9BDF /* Preview Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B9735F3029EE3C9D0081354E /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		B9F6681929ECC2E9000D9BDF /* RandomQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9F6681C29ECC2E9000D9BDF /* RandomQuotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuotesApp.swift; sourceTree = "<group>"; };
 		B9F6682029ECC2EC000D9BDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +34,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9735F2F29EE3C880081354E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B9735F3029EE3C9D0081354E /* Quote.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B9F6681029ECC2E9000D9BDF = {
 			isa = PBXGroup;
 			children = (
@@ -52,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				B9F6681C29ECC2E9000D9BDF /* RandomQuotesApp.swift */,
+				B9735F2F29EE3C880081354E /* Model */,
 				B9F6682C29ECC324000D9BDF /* Views */,
 				B9F6682029ECC2EC000D9BDF /* Assets.xcassets */,
 				B9F6682229ECC2EC000D9BDF /* Preview Content */,
@@ -146,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9F6681D29ECC2E9000D9BDF /* RandomQuotesApp.swift in Sources */,
+				B9735F3129EE3C9D0081354E /* Quote.swift in Sources */,
 				B9F6682E29ECC387000D9BDF /* QuoteView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
